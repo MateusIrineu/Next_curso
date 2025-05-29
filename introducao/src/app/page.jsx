@@ -8,7 +8,7 @@ export default function Home() {
       <main>
       
 
-        <h1 className="text-center border border-red-900 text-red-600 bg-amber-950 rounded-b-xl text-4xl p-5 m-10">Início</h1>
+        <h1 className="text-center border border-red-900 text-red-600 bg-amber-950 rounded-b-xl text-4xl p-5 m-10 font-mono">Início</h1>
 
       </main>
     </div>
