@@ -4,7 +4,8 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 
 export default function CourseDetails(){
-    const {courseId} = useParams();
+    const params = useParams();
+    const courseId = params.coursesId;
 
     return(
         <div>
