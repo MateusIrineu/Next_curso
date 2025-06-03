@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const courseList = ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'Next.js', 'HTTP/HTTPS'];
+const courseList = ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express', 'Next.js', 'HTTP-HTTPS'];
 
 export default function CoursesPage(){
     return (
