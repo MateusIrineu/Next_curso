@@ -8,6 +8,7 @@ const Header = () => {
         <nav className='flex bg-blue-950 text-white gap-4 p-5'>
             <Link href='/'>Início</Link>
             <Link href='/tasks'>Tarefas</Link>
+            <Link href='/addTasks'>Nova tarefa</Link>
         </nav>
       </header>
     </div>

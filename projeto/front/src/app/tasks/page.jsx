@@ -19,6 +19,7 @@ export default function TasksPage() {
         .catch(() => setLoading(false));
     }, []); // jogar isso no chatgpt pra explicar
 
+    // função deletar
         const handleDelete = async (id) => {
             if (!confirm("Deseja excluir essa tarefa?")) return;
             await fetch(`http://localhost:3000/tasks/${id}`, {method: 'DELETE'});
