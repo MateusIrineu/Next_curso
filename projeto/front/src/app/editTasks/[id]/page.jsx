@@ -61,7 +61,7 @@ export default function EditTaskPage() {
             <h1>Edição de tarefa</h1>
 
             {loading ? (
-                <div>Carregando tarefas...</div>
+                <div className='bg-gray-200'>Carregando tarefas...</div>
             ) :
             <>
                 <div>
@@ -82,6 +82,43 @@ export default function EditTaskPage() {
 
                     </select>
                 </div>
+                <form onSubmit={handleSubmit}>
+                    <div>
+                        <label htmlFor="title">
+                            Título
+                        </label>
+                        <input 
+                        type="text"  
+                        value={title} 
+                        id="title" 
+                        placeholder='Título' 
+                        onChange={e => setTitle (e.target.value)} 
+                        disabled={!selectedTaskId}
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="">
+                            Descrição
+                        </label>
+                        <textarea 
+                        value={description} 
+                        id="description" 
+                        onChange={e => 
+                        setDescription(e.target.value)} 
+                        cols="30" 
+                        rows="10" 
+                        placeholder='Adicionar descrição' 
+                        required>
+                        </textarea>
+                    </div>
+                    <button 
+                    type='submit'
+                    disabled={!selectedTaskId}
+                    className='bg-blue-900 text-white'
+                    > Salvar Alterações
+                    </button>
+                </form>
+
             </>
             }
         </div>
