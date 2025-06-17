@@ -1,14 +1,3 @@
 {
-  "tasks": [
-    {
-      "title": "Lavar o carro",
-      "description": "Lavar o carro no sábado",
-      "id": "5fda"
-    },
-    {
-      "title": "Estudar NextAuth",
-      "description": "Ver pelo menos o básico",
-      "id": "f623"
-    }
-  ]
+  "tasks": []
 }
